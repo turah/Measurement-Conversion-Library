@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--
+  This library was originally developed by Erich Ledesma.
+  The original version is available from:
+  http://www.codeproject.com/Articles/23087/Measurement-Unit-Conversion-Library
+
+  Licensed under the CPOL License.
+
+  This file has been created and added in solution by Radix Engenharia e Software.
+-->
+<UnitTable>
+  <Units>
+    <Unit code="1" name="MeterSquared" symbol="m²" plural="MetersSquared"/>
+    <Unit code="2" name="KilometerSquared" symbol="km²" plural="KilometersSquared"/>
+    <Unit code="3" name="CentimeterSquared" symbol="cm²" plural="CentimetersSquared"/>
+    <Unit code="4" name="MilimeterSquared" symbol="mm²" plural="MilimetersSquared"/>
+    <Unit code="5" name="MileSquared" symbol="mi²" plural="MilesSquared"/>
+    <Unit code="6" name="YardsSquared" symbol="yrd²" plural="YardsSquared"/>
+    <Unit code="7" name="FootSquared" symbol="ft²" plural="FeetSquared"/>
+    <Unit code="8" name="InchSquared" symbol="in²" plural="InchesSquared"/>
+  </Units>
+  <Conversions>
+    <Linear srcCode="1" destCode="2" factor="0,000001"/>
+    <Linear srcCode="1" destCode="3" factor="10000"/>
+    <Linear srcCode="1" destCode="4" factor="1000000"/>
+    <Linear srcCode="1" destCode="5" factor="3,861e-7"/>
+    <Linear srcCode="1" destCode="6" factor="1,195989989"/>
+    <Linear srcCode="1" destCode="7" factor="10,7639104167"/>
+    <Linear srcCode="1" destCode="8" factor="1550,0031000062"/>
+
+    <Linear srcCode="2" destCode="3" factor="10000000000"/>
+    <Linear srcCode="2" destCode="4" factor="1000000000000"/>
+    <Linear srcCode="2" destCode="5" factor="0,3861021585"/>
+    <Linear srcCode="2" destCode="6" factor="1195989,9890853954"/>
+    <Linear srcCode="2" destCode="7" factor="10763910,416709721" />
+    <Linear srcCode="2" destCode="8" factor="1550003100,0062"/>
+
+    <Linear srcCode="3" destCode="4" factor="100"/>
+    <Linear srcCode="3" destCode="5" factor="0,0000000000386102159"/> 
+    <Linear srcCode="3" destCode="6" factor="0,000119599"/>
+    <Linear srcCode="3" destCode="7" factor="0,001076391" />
+    <Linear srcCode="3" destCode="8" factor="0,15500031"/>
+
+    <Linear srcCode="4" destCode="5" factor="0,000000000000386102159"/>
+    <Linear srcCode="4" destCode="6" factor="0,000001196"/> 
+    <Linear srcCode="4" destCode="7" factor="0,0000107639" />
+    <Linear srcCode="4" destCode="8" factor="0,0015500031"/>
+
+    <Linear srcCode="5" destCode="6" factor="3097599,8518120563" />
+    <Linear srcCode="5" destCode="7" factor="27878400" />
+    <Linear srcCode="5" destCode="8" factor="4014489600" />
+
+    <Linear srcCode="6" destCode="7" factor="9" />
+    <Linear srcCode="6" destCode="8" factor="1296" />
+
+    <Linear srcCode="7" destCode="8" factor="144" />
+  </Conversions>
+</UnitTable>

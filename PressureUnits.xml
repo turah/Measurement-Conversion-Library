@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--
+  This library was originally developed by Erich Ledesma.
+  The original version is available from:
+  http://www.codeproject.com/Articles/23087/Measurement-Unit-Conversion-Library
+
+  Licensed under the CPOL License.
+
+  This file has been created and added in solution by Radix Engenharia e Software.
+-->
+<UnitTable>
+  <Units>
+    <Unit code="1" name="Pascal" symbol="Pa" plural="Pascals"/>
+    <Unit code="2" name="PoundPerSquareInch" symbol="Psi" plural="PoundsPerSquareInch"/>
+    <Unit code="3" name="Bar" symbol="bar" plural="bar"/>
+    <Unit code="4" name="PascalG" symbol="Pag" plural="PascalG" />
+    <Unit code="5" name="PoundPerSquareInchG" symbol="Psig" plural="PoundPerSquareInchG" />
+    <Unit code="6" name="BarG" symbol="Barg" plural="BarG" />
+    
+  </Units>
+  <Conversions>
+    <Linear srcCode="1" destCode="2" factor="0,000145037738007"/>
+    <Linear srcCode="1" destCode="3" factor="0,00001"/>
+    <Linear srcCode="1" destCode="4" deltha="-101325" />
+    <Linear srcCode="1" destCode="5" factor="0,000145037738007" deltha="-14,696" />
+    <Linear srcCode="1" destCode="6" factor="0,00001"  deltha="-1,01325" />
+    
+    <Linear srcCode="2" destCode="3" factor="0,0689475729"/>
+    <Linear srcCode="2" destCode="4" factor="6894,757293178" deltha="-101325" />
+    <Linear srcCode="2" destCode="5" deltha="-14,696"/>
+    <Linear srcCode="2" destCode="6" factor="0,068947573" deltha="-1,01325"/>
+  
+    <Linear srcCode="3" destCode="4" factor="100000" deltha="-101325"/>
+    <Linear srcCode="3" destCode="5" factor="14,503773773" deltha="-14,696" />
+    <Linear srcCode="3" destCode="6" deltha="-1,01325"/>
+  
+    <Linear srcCode="4" destCode="5" factor="0,00008999"/>
+    <Linear srcCode="4" destCode="6" factor="0,00001"/>
+  
+    <Linear srcCode="5" destCode="6" factor="0,0689475729"/>
+    
+  </Conversions>
+</UnitTable>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--
+  This library was originally developed by Erich Ledesma.
+  The original version is available from:
+  http://www.codeproject.com/Articles/23087/Measurement-Unit-Conversion-Library
+
+  Licensed under the CPOL License.
+
+  This file has been created and added in solution by Radix Engenharia e Software.
+-->
+<UnitTable>
+  <Units>
+    <Unit code="1" name="KilogramPerCubicMeter" symbol="kg/m3" plural="KilogramsPerCubicMeter"/>
+    <Unit code="2" name="GramPerCubicCentimeter" symbol="g/cm3" plural="GramsPerCubicCentimeter"/>
+    <Unit code="3" name="PoundPerCubicFeet" symbol="lb/ft3" plural="PoundsPerCubicFeet"/>
+  </Units>
+  <Conversions>
+    <Linear srcCode="1" destCode="2" factor="0,001"/>
+    <Linear srcCode="1" destCode="3" factor="0,0624279606"/>
+
+    <Linear srcCode="2" destCode="3" factor="62,4279606"/>
+  </Conversions>
+</UnitTable>

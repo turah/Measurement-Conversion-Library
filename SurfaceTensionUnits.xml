@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--
+  This library was originally developed by Erich Ledesma.
+  The original version is available from:
+  http://www.codeproject.com/Articles/23087/Measurement-Unit-Conversion-Library
+
+  Licensed under the CPOL License.
+
+  This file has been created and added in solution by Radix Engenharia e Software.
+-->
+<UnitTable>
+  <Units>
+    <Unit code="1" name="NewtonPerMeter" symbol="N/m " plural="NewtonPerMeter"/>
+    <Unit code="2" name="DynePerCentimeter" symbol="dyn/cm " plural="DynesPerCentimeter"/>
+    <Unit code="3" name="MilinewtonPerMeter" symbol="mN/m" plural="MilinewtonPerMeter"/>
+  </Units>
+  <Conversions>
+    <Linear srcCode="1" destCode="2" factor="1000"/>
+    <Linear srcCode="1" destCode="3" factor="1000" />
+
+    <Linear srcCode="2" destCode="3" factor="1"/>
+  </Conversions>
+</UnitTable>

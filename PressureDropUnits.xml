@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--
+  This library was originally developed by Erich Ledesma.
+  The original version is available from:
+  http://www.codeproject.com/Articles/23087/Measurement-Unit-Conversion-Library
+
+  Licensed under the CPOL License.
+
+  This file has been created and added in solution by Radix Engenharia e Software.
+-->
+<UnitTable>
+  <Units>
+    <Unit code="1" name="PoundForcePerSquareFeet" symbol="lbf/ft²" plural="PoundForcePerSquareFoot" />
+    <Unit code="2" name="InchOfWater" symbol="inch2o" plural="InchesOfWater" />
+    <Unit code="3" name="MilimeterOfWater" symbol="mmh2o" plural="MilimetersOfWater" />
+    <Unit code="4" name="Bar" symbol="bar" plural="Bar" />
+    <Unit code="5" name="PoundPerSquareInch" symbol="psi" plural="PoundPerSquareInch" />
+    <Unit code="6" name="Milibar" symbol="mbar" plural="Milibar" />
+    
+  </Units>
+  <Conversions>
+
+    <Linear srcCode="1" destCode="2" factor="0,1922216" />
+    <Linear srcCode="1" destCode="3" factor="4,8824274" />
+    <Linear srcCode="1" destCode="4" factor="0,0004788" />
+    <Linear srcCode="1" destCode="5" factor="0,0069444" />
+    <Linear srcCode="1" destCode="6" factor="0,4788026" />
+
+    <Linear srcCode="2" destCode="3" factor="25,3999935491121" />
+    <Linear srcCode="2" destCode="4" factor="0,0024909" />
+    <Linear srcCode="2" destCode="5" factor="0,0361273" />
+    <Linear srcCode="2" destCode="6" factor="2,490889" />
+
+    <Linear srcCode="3" destCode="4" factor="0,0980665" />
+    <Linear srcCode="3" destCode="5" factor="0,0014223" />
+    <Linear srcCode="3" destCode="6" factor="0,0980665" />
+
+    <Linear srcCode="4" destCode="5" factor="14,5037744" />
+    <Linear srcCode="4" destCode="6" factor="1000" />
+
+    <Linear srcCode="5" destCode="6" factor="68,94757" />
+    
+  </Conversions>
+</UnitTable>

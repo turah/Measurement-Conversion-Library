@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+  This library was originally developed by Erich Ledesma.
+  The original version is available from:
+  http://www.codeproject.com/Articles/23087/Measurement-Unit-Conversion-Library
+
+  Licensed under the CPOL License.
+
+  This file was modified by Radix Engenharia e Software.
+  All modifications are pointed below.
+  
+  Changes List
+  - Added micrometer unit to length units (<Unit>) at unit table (<UnitTable>) as well as all necessary micrometer conversions at <Conversion>.
+-->
+<UnitTable>
+  <Units>
+    <Unit code="1" name="Meter" symbol="m" plural="Meters"/>
+    <Unit code="2" name="Kilometer" symbol="km" plural="Kilometers"/>
+    <Unit code="3" name="Centimeter" symbol="cm" plural="Centimeters"/>
+    <Unit code="4" name="Milimeter" symbol="mm" plural="Milimeters"/>
+    <Unit code="5" name="Mile" symbol="mi." plural="Miles"/>
+    <Unit code="6" name="Yards" symbol="yrd" plural="Yards"/>
+    <Unit code="7" name="Foot" symbol="ft" plural="Feet"/>
+    <Unit code="8" name="Inch" symbol="in" plural="Inches"/>
+    <Unit code="9" name="Micrometer" symbol="µ" plural="Micrometers"/>
+  </Units>
+  <Conversions>
+    <Linear srcCode="1" destCode="2" factor="1e-3"/>
+    <Linear srcCode="1" destCode="3" factor="1e2"/>
+    <Linear srcCode="1" destCode="4" factor="1e3"/>
+    <Linear srcCode="1" destCode="5" factor="0,621371e-3"/>
+    <Linear srcCode="1" destCode="6" factor="1,093613"/>
+    <Linear srcCode="1" destCode="7" factor="3,280839"/>
+    <Linear srcCode="1" destCode="8" factor="39,37"/>
+    <Linear srcCode="1" destCode="9" factor="1000000"/>
+
+    <Linear srcCode="2" destCode="3" factor="100000"/>
+    <Linear srcCode="2" destCode="4" factor="1000000"/>
+    <Linear srcCode="2" destCode="5" factor="0,621371"/>
+    <Linear srcCode="2" destCode="6" factor="1,093613e3"/>
+    <Linear srcCode="2" destCode="7" factor="3,280839e3" />
+    <Linear srcCode="2" destCode="8" factor="3,937e4"/>
+    <Linear srcCode="2" destCode="9" factor="1000000000" />
+
+    <Linear srcCode="3" destCode="4" factor="10"/>
+    <Linear srcCode="3" destCode="5" factor="0,621371e-5"/>
+    <Linear srcCode="3" destCode="6" factor="1,093613e-2"/>
+    <Linear srcCode="3" destCode="7" factor="3,280839e-2" />
+    <Linear srcCode="3" destCode="8" factor="3,937e-1"/>
+    <Linear srcCode="3" destCode="9" factor="10000" />
+    
+    <Linear srcCode="4" destCode="5" factor="0,621371e-6"/>
+    <Linear srcCode="4" destCode="6" factor="1,093613e-3"/>
+    <Linear srcCode="4" destCode="7" factor="3,280839e-3" />
+    <Linear srcCode="4" destCode="8" factor="3,937e-2"/>
+    <Linear srcCode="4" destCode="9" factor="1000" />
+
+    <Linear srcCode="5" destCode="6" factor="1760" />
+    <Linear srcCode="5" destCode="7" factor="5280" />
+    <Linear srcCode="5" destCode="8" factor="63360" />
+    <Linear srcCode="5" destCode="9" factor="1609344000" />
+    
+    <Linear srcCode="6" destCode="7" factor="3" />
+    <Linear srcCode="6" destCode="8" factor="36" />
+    <Linear srcCode="6" destCode="9" factor="914400" />
+
+    <Linear srcCode="7" destCode="8" factor="12" />
+    <Linear srcCode="7" destCode="9" factor="304800" />
+
+    <Linear srcCode="8" destCode="9" factor="25400" />
+  </Conversions>
+</UnitTable>

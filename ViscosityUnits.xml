@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--
+  This library was originally developed by Erich Ledesma.
+  The original version is available from:
+  http://www.codeproject.com/Articles/23087/Measurement-Unit-Conversion-Library
+
+  Licensed under the CPOL License.
+
+  This file has been created and added in solution by Radix Engenharia e Software.
+-->
+<UnitTable>
+  <Units>
+    <Unit code="1" name="KilogramPerMeter_Second" symbol="kg/(m.s)" plural="KilogramsPerMeter_Second"/>
+    <Unit code="2" name="Pascal_Second" symbol="Pa*s" plural="Pascals_Second"/>
+    <Unit code="3" name="PoundPerFeet_Second" symbol="lb/(ft.s)" plural="PoundsPerFeet_Second"/>
+    <Unit code="4" name="Centipoise" symbol="cP" plural="Centipoises"/>
+  </Units>
+  <Conversions>
+    <Linear srcCode="1" destCode="2" factor="1"/>
+    <Linear srcCode="1" destCode="3" factor="0,671969"/>
+    <Linear srcCode="1" destCode="4" factor="1000"/>
+
+    <Linear srcCode="2" destCode="3" factor="0,671969"/>
+    <Linear srcCode="2" destCode="4" factor="1000"/>
+
+    <Linear srcCode="3" destCode="4" factor="1488,1639"/>
+
+  </Conversions>
+</UnitTable>

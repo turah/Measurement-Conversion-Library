@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--
+  This library was originally developed by Erich Ledesma.
+  The original version is available from:
+  http://www.codeproject.com/Articles/23087/Measurement-Unit-Conversion-Library
+
+  Licensed under the CPOL License.
+
+  This file has been created and added in solution by Radix Engenharia e Software.
+-->
+<UnitTable>
+  <Units>
+    <Unit code="1" name="CubicMeterPerSecond " symbol="m3/s" plural="CubicMetersPerSecond "/>
+    <Unit code="2" name="CubicFeetPerSecond" symbol="ft3/s" plural="CubicFeetsPerSecond"/>
+    <Unit code="3" name="CubicMeterPerHour" symbol="m3/h" plural="CubicMetersPerHour"/>
+    <Unit code="4" name="GallonPerMinute" symbol="gpm" plural="GallonsPerMinute"/>
+    <Unit code="5" name="BarrelPerDay" symbol="bbl/d" plural="BarrelPerDay"/>
+    <Unit code="6" name="KilobarrelPerDay" symbol="kbbl/d" plural="KilobarrelPerDay"/>
+    
+  </Units>
+  <Conversions>
+    <Linear srcCode="1" destCode="2" factor="35,3146624713"/>
+    <Linear srcCode="1" destCode="3" factor="3600"/>
+    <Linear srcCode="1" destCode="4" factor="15850"/>
+    <Linear srcCode="1" destCode="5" factor="543439,650565"/>
+    <Linear srcCode="1" destCode="6" factor="543,439650565"/>
+
+    <Linear srcCode="2" destCode="3" factor="101,94066"/>
+    <Linear srcCode="2" destCode="4" factor="448,8"/>
+    <Linear srcCode="2" destCode="5" factor="15388,497217823"/>
+    <Linear srcCode="2" destCode="6" factor="15,388497218"/>
+
+    <Linear srcCode="3" destCode="4" factor="4,403"/>
+    <Linear srcCode="3" destCode="5" factor="150,95545849"/>
+    <Linear srcCode="3" destCode="6" factor="0,150955458"/>
+
+    <Linear srcCode="4" destCode="5" factor="34,285714286"/>
+    <Linear srcCode="4" destCode="6" factor="0,034285714"/>
+
+    <Linear srcCode="5" destCode="6" factor="0,001"/>
+  </Conversions>
+</UnitTable>

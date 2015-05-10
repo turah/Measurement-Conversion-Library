@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--
+  This library was originally developed by Erich Ledesma.
+  The original version is available from:
+  http://www.codeproject.com/Articles/23087/Measurement-Unit-Conversion-Library
+
+  Licensed under the CPOL License.
+
+  This file has been created and added in solution by Radix Engenharia e Software.
+-->
+<UnitTable>
+  <Units>
+    <Unit code="1" name="GallonPerMinutePerSquareFeet" symbol="gpm/ft²" plural="GallonsPerMinutePerSquareFeet" />
+    <Unit code="2" name="CubicMeterPerHourSquareMeter" symbol="m³/h.m²" plural="CubicMetersPerHourSquareMeter" />
+    <Unit code="3" name="CubicMeterPerSecondSquareMeter" symbol="m³/s.m²" plural="CubicMetersPerSecondSquareMeter" />
+    
+  </Units>
+  <Conversions>
+    <Linear srcCode="1" destCode="2" factor="2,44475013950028" />
+    <Linear srcCode="1" destCode="3" factor="0,0006790972609723" />
+
+    <Linear srcCode="2" destCode="3" factor="0,000277777777777778" />
+    
+  </Conversions>
+</UnitTable>
